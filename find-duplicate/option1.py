@@ -22,3 +22,6 @@ def findDuplicate(input: List[int]) -> int:
     
 list = [1,2,3,6,8,3,4]
 print("Duplicate:", findDuplicate(list))
+
+# This should be O(n) I believe because it will increase linearly in complex
+# as the list size increases
