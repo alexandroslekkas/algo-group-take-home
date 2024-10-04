@@ -11,4 +11,14 @@ from typing import List
 # `input` contains all integers in the domain [1, N] at least once
 # `findDuplicate` returns an `int`: the duplicate integer
 def findDuplicate(input: List[int]) -> int:
-    return 0
+    input.sort()
+    print(input)
+    previousNum = -1
+    for num in input:
+        print(num)
+        if (num == previousNum):
+            return num
+        previousNum = num
+    
+list = [1,2,3,6,8,3,4]
+print("Duplicate:", findDuplicate(list))
