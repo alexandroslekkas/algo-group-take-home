@@ -10,4 +10,71 @@
 # `size` returns the count of values
 
 class IntStack:
-    pass
+    
+    def __init__(self, root):
+        self.root = root
+        
+    def push(self, node):
+        currentNode = self.root
+        while (currentNode.getNext() != 0):
+            currentNode = currentNode.getNext()
+        currentNode.setNext(node)
+        
+    def pop(self):
+        previousNode = 0
+        currentNode = self.root
+        while (currentNode.getNext() != 0):
+            previousNode = currentNode
+            currentNode = currentNode.getNext()
+        previousNode.setNext(0)
+        
+    def peek(self):
+        currentNode = self.root
+        while (currentNode.getNext() != 0):
+            currentNode = currentNode.getNext()
+        return currentNode.getValue()     
+    
+    def size(self):
+        count = 1
+        currentNode = self.root
+        while (currentNode.getNext() != 0):
+            currentNode = currentNode.getNext()
+            count = count + 1
+        return count
+    
+class IntStackNode:
+    
+    next = 0
+    
+    def __init__(self, value):
+        self.value = value
+        
+    def setNext(self, next):
+        self.next = next
+        
+    def getNext(self):
+        return self.next
+    
+    def getValue(self):
+        return self.value
+    
+root = IntStackNode(0)
+stack = IntStack(root)
+stack.push(IntStackNode(1))
+stack.push(IntStackNode(2))
+stack.push(IntStackNode(3))
+stack.push(IntStackNode(4))
+stack.push(IntStackNode(5))
+print(stack.size())
+print(stack.peek())
+stack.pop()
+print(stack.size())
+print(stack.peek())
+
+
+
+
+
+        
+    
+        
