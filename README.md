@@ -1,9 +1,5 @@
 # Algo Group Take Home 🧑‍💻
 
-## 🔌 Tech
-
-- Language: `python 3`
-
 ## 💻 Problems
 
 ### Option 1: Find Duplicate
