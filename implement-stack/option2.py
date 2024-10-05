@@ -1,6 +1,3 @@
-# OPTION 2 - IMPLEMENT STACK
-# DO NOT SHARE
-
 # 2. Implement a growable integer stack (without using container libraries like vector, list, etc.)
 #    that satisfies the following requirements:
 
@@ -10,7 +7,6 @@
 # `size` returns the count of values
 
 class IntStack:
-    
     def __init__(self, root):
         self.root = root
         
@@ -43,7 +39,6 @@ class IntStack:
         return count
     
 class IntStackNode:
-    
     next = 0
     
     def __init__(self, value):
@@ -57,19 +52,6 @@ class IntStackNode:
     
     def getValue(self):
         return self.value
-    
-root = IntStackNode(0)
-stack = IntStack(root)
-stack.push(IntStackNode(1))
-stack.push(IntStackNode(2))
-stack.push(IntStackNode(3))
-stack.push(IntStackNode(4))
-stack.push(IntStackNode(5))
-print(stack.size())
-print(stack.peek())
-stack.pop()
-print(stack.size())
-print(stack.peek())
 
 
 

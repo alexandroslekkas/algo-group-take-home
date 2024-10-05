@@ -12,6 +12,7 @@ This problem was solved with O(N) time and space complexity.
 
 ### Option 2: Implement Stack
 
-- Code: `option1.py`
+- Code: `implement-stack/option2.py`
+- Tests: `implement-stack/option2Tests.py`
 
 I used OOP principles to build a system of nodes to emulate a stack.

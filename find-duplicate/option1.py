@@ -1,5 +1,3 @@
-from typing import List
-
 # Implement a function to identify a duplicate integer in an unsorted array
 # of integers. Talk about time/space complexity for each method you implement.
 
@@ -7,6 +5,9 @@ from typing import List
 # `input` elements are integers in the domain [1, N]
 # `input` contains all integers in the domain [1, N] at least once
 # `findDuplicate` returns an `int`: the duplicate integer
+
+from typing import List
+
 def findDuplicate(input: List[int]) -> int:
     seenNumbers = set()
     for num in input:
